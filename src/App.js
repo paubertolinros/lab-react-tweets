@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       {tweetsArray.map((elem, i) => {
         return (
-          <Tweet tweet={elem} />
+          <Tweet key={`id${i}`} tweet={elem} />
         )
       })}
     </div>
